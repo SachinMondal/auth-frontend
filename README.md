@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Authentication
 
-## Getting Started
+it is a simple authentication website where user have the functionality of Register, Login and after that successful login he/she will be redirected to his particular page i.e. Profile page.
 
-First, run the development server:
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Configuration](#configuration)
+4. [Routes](#routes)
+5. [Contributing](#contributing)
+7. [License](#license)
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/SachinMondal/suth-frontend.git
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables:**
+
+   Create a `.env` file in the root directory and add necessary environment variables. See `.env.example` for reference.
+
+## Usage
+
+To start the server, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The server will start at `http://localhost:3000` by default (or specify your preferred port in `.env`).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Environment Variables:**
+  - `PORT`: Port number for the server (default: 3000)
+  - Other variables specific to your project (e.g., database URI, API keys)
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Routes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Describe the available API routes and endpoints of your application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Example:
 
-## Deploy on Vercel
+- `POST /api/v1/register`: Page for registering new User.
+- `POST /api/v1/login`: Page for Login for the existing User.
+- `GET /api/v1/user`: Profile page for the logged in User.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to fork this repository, submit pull requests, and report issues.
+
+## License
+
+This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+
